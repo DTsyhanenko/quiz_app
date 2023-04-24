@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/Compiled-CSS/css/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        title Quiz App
+    body
+        #quiz.quiz-container
+            .quiz-header 
+                h2#question Question text
+                ul 
+                    li 
+                        input#a.answer(type="radio" name="answer")
+                        label#a_text(for="a") Question
+
+                    li 
+                        input#b.answer(type="radio" name="answer")
+                        label#b_text(for="b") Question
+
+                    li 
+                        input#c.answer(type="radio" name="answer")
+                        label#c_text(for="c") Question
+
+                    li 
+                        input#d.answer(type="radio" name="answer")
+                        label#d_text(for="d") Question
+
+            button#submit Submit
+
+
+        script(src="/dist/index.js")
